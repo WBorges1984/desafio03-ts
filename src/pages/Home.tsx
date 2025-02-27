@@ -32,7 +32,7 @@ const Home = () => {
                     <h1>Faça o login</h1>
                 </Center>
                 <Input placeholder="email: will@will.com" value={email} onChange={(event) => setEmail(event.target.value)} />
-                <Input placeholder="password: 123456" value={password} onChange={(event)=>setPassword(event.target.value)}/>
+                <Input placeholder="password: 123456" type="password" value={password} onChange={(event)=>setPassword(event.target.value)}/>
                 <Center>
                     <DButton
                         onClick={() => validateUser(email, password)}
